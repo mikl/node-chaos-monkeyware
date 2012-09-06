@@ -1,0 +1,37 @@
+{
+  "name": "chaos-monkeyware",
+  "version": "0.1.0",
+  "description": "Chaos Monkey implemented as Node.js Express-compatible middleware.",
+  "author": "Mikkel Hoegh <mikkel@hoegh.org> (http://mikkel.hoegh.org/)",
+  "main": "index.js",
+  "engines": {
+    "node" : "0.8 || 0.6"
+  },
+  "scripts": {
+    "test": "vows --spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikl/node-chaos-monkeyware.git"
+  },
+  "bugs" : { "url": "https://github.com/mikl/node-chaos-monkeyware/issues" },
+  "keywords": [
+    "development",
+    "fail",
+    "middleware",
+    "server",
+    "test"
+  ],
+  "devDependencies": {
+    "connect": "2.4.x",
+    "express": "3.0.x",
+    "flatiron": "0.2.x",
+    "restify": "1.4.x",
+    "vows": "0.6.x"
+  },
+  "licenses" :
+  [ { "type" : "Apache 2.0"
+    , "url" : "https://github.com/mikl/node-chaos-monkeyware/raw/master/LICENSE"
+    }
+  ]
+}
