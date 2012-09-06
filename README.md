@@ -1,3 +1,5 @@
+[![build status](https://secure.travis-ci.org/mikl/node-chaos-monkeyware.png)](http://travis-ci.org/mikl/node-chaos-monkeyware)
+
 Chaos Monkeyware
 ================
 
@@ -45,7 +47,6 @@ It is used as any other Connect/Express compatible middleware.
 
     var app = require('connect')()
       .use(connect.logger('dev'))
-      .use(connect.static('public'))
       .use(require('chaos-monkeyware')())
       .use(function(req, res){
         res.end('hello world\n');

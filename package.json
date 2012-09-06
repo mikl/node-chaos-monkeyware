@@ -1,6 +1,6 @@
 {
   "name": "chaos-monkeyware",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Chaos Monkey implemented as Node.js Express-compatible middleware.",
   "author": "Mikkel Hoegh <mikkel@hoegh.org> (http://mikkel.hoegh.org/)",
   "main": "index.js",
@@ -26,6 +26,7 @@
     "connect": "2.4.x",
     "express": "3.0.x",
     "flatiron": "0.2.x",
+    "request": "2.11.x",
     "restify": "1.4.x",
     "vows": "0.6.x"
   },
