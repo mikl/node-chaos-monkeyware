@@ -24,6 +24,10 @@ var chaos_monkeyware = module.exports = function (options) {
       // that this failure was... special.
       res.setHeader('ChaosMonkeyWare', mischiefName);
 
+      if (options.logger) {
+        options.logger('ChaosMonkeyWare mischief: ' + mischiefName);
+      }
+
       return mischief[mischiefName](req, res, next);
     }
 

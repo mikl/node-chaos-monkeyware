@@ -61,7 +61,9 @@ It is used as any other Connect/Express compatible middleware.
     app.use(flatiron.plugins.http);
 
     app.http.before = [
-      require('chaos-monkeyware')()
+      require('chaos-monkeyware')({
+        logger: app.log.warn
+      })
     ];
 
     app.start(8080);
@@ -74,6 +76,7 @@ It is used as any other Connect/Express compatible middleware.
     // If not on production, enable the Chaos Monkeyware middleware.
     if (process.env.NODE_ENV !== 'production') {
       apiserver.pre(require('chaos-monkeyware')({
+        logger: console.log,
         probability: 0.2
       }));
     }
