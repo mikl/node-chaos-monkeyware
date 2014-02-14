@@ -31,3 +31,9 @@ module.exports.http500 = function (req, res, next) {
   res.writeHead(500, res.headers);
   res.end('#fail');
 };
+
+module.exports.http418 = function (req, res, next) {
+  res.setHeader('Content-Type', 'text/plain');
+  res.writeHead(418, res.headers);
+  res.end("I'm a teapot");
+};
