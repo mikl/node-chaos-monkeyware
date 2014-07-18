@@ -5,7 +5,7 @@
   "author": "Mikkel Hoegh <mikkel@hoegh.org> (http://mikkel.hoegh.org/)",
   "main": "index.js",
   "engines": {
-    "node" : "0.8 || 0.6"
+    "node": ">= 0.6.x"
   },
   "scripts": {
     "test": "vows --spec"
